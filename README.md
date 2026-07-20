@@ -14,12 +14,7 @@ TRIEKY is a lightweight, dependency-free post-processing tool for PacBio TRGT VC
 
 ## Why TRIEKY?
 
-TRGT (PacBio) is a powerful tandem repeat genotyper, but its output is naturally constrained by the expected motifs defined in the reference input BED file. When a sequenced allele contains unexpected sequence composition—such as:
-*   **Interruption motifs** in *DMPK* or *HTT*
-*   **Non-canonical motifs** in *RFC1* (CANVAS)
-*   **Novel repeat structures** or flanking variations at other loci
-
-these motifs are generally not explicitly broken down in the default VCF output. 
+TRGT (PacBio) is a powerful tandem repeat genotyper, but its output is naturally constrained by the expected motifs defined in the reference input BED file. When a sequenced allele contains unexpected sequence composition, such as **Interruption motifs** in *DMPK* or *HTT* or **Non-canonical motifs** in *RFC1* (CANVAS), these motifs are generally not explicitly broken down in the default VCF output. 
 
 In clinical genetics, characterising this "hidden" sequence composition is crucial, as motif interruptions and alternative conformations can directly influence pathogenicity, modulate clinical phenotype, or explain apparent diagnostic discrepancies.
 
