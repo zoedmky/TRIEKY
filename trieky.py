@@ -2,7 +2,12 @@
 # -*- coding: utf-8 -*-
 
 """
+TRIEKY - Tandem Repeat Inspector for Emergent K-mer varietY
+
 Post-processing tool for PacBio TRGT VCF files.
+
+Author: Zoé Dmitrievsky
+Neurogenetics Laboratory, Hospices Civils de Lyon
 
 Main ideas
 -----------
@@ -542,10 +547,10 @@ def main():
     Command-line entry point.
 
     Usage:
-        python trgt_postprocess_simple.py <targets.tsv> <input.vcf> <output.txt>
+        python trieky.py <targets.tsv> <input.vcf> <output.txt>
     """
     if len(sys.argv) != 4:
-        print("Usage: python trgt_postprocess_simple.py <targets.tsv> <input.vcf> <output.txt>")
+        print("Usage: python trieky.py <targets.tsv> <input.vcf> <output.txt>")
         sys.exit(1)
 
     cfg_path, vcf_path, out_path = sys.argv[1], sys.argv[2], sys.argv[3]
