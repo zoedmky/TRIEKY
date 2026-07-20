@@ -1,0 +1,5 @@
+TRID	motif_sizes	startswith	count_min	keep_only_unexpected	group_rotations
+DMPK	3	any	10	true	true
+RFC1	5,6	A	10	true	true
+HTT	3	any	10	true	true
+FXN	3	any	8	true	true
