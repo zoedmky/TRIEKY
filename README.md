@@ -129,7 +129,7 @@ TRIEKY/
 
 ## Acknowledgements & History
 
-* **Development:** Developed at the ** Biochemistry and Molecular Biology Department, Neurogenetics Laboratory, Hospices Civils de Lyon (France)**.
+* **Development:** Developed at the **Biochemistry and Molecular Biology Department, Neurogenetics Laboratory, Hospices Civils de Lyon (France)**.
 * **Origin:** TRIEKY was developed in response to limitations identified during clinical use of TRGT, following exchanges with the PacBio development team.
 * **Disclaimer:** TRIEKY is intended as an independent companion post-processing tool and is not officially affiliated with PacBio.
 
@@ -137,12 +137,6 @@ TRIEKY/
 This tool and its clinical application were presented as an oral communication at the **Assises de Génétique Humaine 2026** (Cannes, France).
 
 ---
-
-## Citation
-
-If you use TRIEKY in your research or clinical workflows, please cite it as follows:
-
-> Dmitrievsky Z. *TRIEKY: Tandem Repeat Inspector for Emergent K-mer varietY.* GitHub (2026). [https://github.com/zoedmky/TRIEKY](https://github.com/zoedmky/TRIEKY)
 
 ## Dependencies & Related Tools
 
@@ -152,6 +146,14 @@ If you use TRIEKY, please also cite TRGT:
 
 > Dolzhenko E, English A, Dashnow H et al. Characterization and visualization of tandem repeats at genome scale.
 > *Nature Biotechnology* 2024.
+
+## Citation
+
+If you use TRIEKY in your research or clinical workflows, please cite it as follows:
+
+> Dmitrievsky Z. *TRIEKY: Tandem Repeat Inspector for Emergent K-mer varietY.* GitHub (2026). [https://github.com/zoedmky/TRIEKY](https://github.com/zoedmky/TRIEKY)
+
+
 > https://www.nature.com/articles/s41587-023-02057-3
 
 
