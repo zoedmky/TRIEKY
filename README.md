@@ -142,10 +142,11 @@ This tool and its clinical application were presented as an oral communication a
 
 TRIEKY is designed as a companion tool for **TRGT (Tandem Repeat Genotyper)** by PacBio.
 
-If you use TRIEKY, please also cite TRGT:
+If you use TRIEKY, please also cite TRGT as follows :
 
 > Dolzhenko E, English A, Dashnow H et al. Characterization and visualization of tandem repeats at genome scale.
 > *Nature Biotechnology* 2024.
+> https://www.nature.com/articles/s41587-023-02057-3
 
 ## Citation
 
@@ -154,7 +155,7 @@ If you use TRIEKY in your research or clinical workflows, please cite it as foll
 > Dmitrievsky Z. *TRIEKY: Tandem Repeat Inspector for Emergent K-mer varietY.* GitHub (2026). [https://github.com/zoedmky/TRIEKY](https://github.com/zoedmky/TRIEKY)
 
 
-> https://www.nature.com/articles/s41587-023-02057-3
+
 
 
 
