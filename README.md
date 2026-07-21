@@ -1,13 +1,18 @@
-# TRIEKY 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/a71e633c-7553-4e50-91cd-a2e305b9497a" alt="TRIEKY Logo" width="300">
 
-**TRIEKY** (**T**andem **R**epeat **I**nspector for **E**mergent **K**-mer **v**ariet**Y**)  
-*...because tandem repeats are tricky.*
+# TRIEKY
+
+  <b>T</b>andem <b>R</b>epeat <b>I</b>nspector for <b>E</b>mergent <b>K</b>-mer <b>v</b>ariet<b>Y</b><br>
+  <i>...because tandem repeats are tricky.</i>
+
+</div>
 
 TRIEKY is a lightweight, dependency-free post-processing tool for PacBio TRGT VCF files. It inspects reconstructed allele sequences to identify unexpected repeat motifs, detect interruptions, and summarize complex allele composition.
 
 > ⚠️ **Disclaimer & Limitations**
 > * **Research Use Only (RUO):** This tool is a prototype designed for research and exploratory purposes. It is not validated for primary clinical diagnosis.
-> * **Proof of Concept:** Developed at the Neurogenetics Laboratory (Hospices Civils de Lyon) to explore the detection of atypical motifs and interruptions in TRGT outputs.
+> * **Proof of Concept:** Developed at the Biochemistry and Molecular Biology Department, Neurogenetics Laboratory, Hospices Civils de Lyon (France) to explore the detection of atypical motifs and interruptions in TRGT outputs.
 > * **Validation Status:** This software has been tested on a limited number of samples. Results should be interpreted with caution. Feedback and issues are welcome.
 
 ---
@@ -117,12 +122,12 @@ TRIEKY/
 
 ## Acknowledgements & History
 
-* **Development:** Developed at the **Neurogenetics Laboratory, Hospices Civils de Lyon (France)**.
+* **Development:** Developed at the ** Biochemistry and Molecular Biology Department, Neurogenetics Laboratory, Hospices Civils de Lyon (France)**.
 * **Origin:** TRIEKY was developed in response to limitations identified during clinical use of TRGT, following exchanges with the PacBio development team.
 * **Disclaimer:** TRIEKY is intended as an independent companion post-processing tool and is not officially affiliated with PacBio.
 
 ### Communications
-This tool and its clinical application were presented as an oral communication at the **Assises de Génétique** (France).
+This tool and its clinical application were presented as an oral communication at the **Assises de Génétique Humaine 2026** (Cannes, France).
 
 ---
 
