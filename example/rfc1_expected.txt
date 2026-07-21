@@ -1,0 +1,14 @@
+=== chr4:39348424 [RFC1] allele 1 ===
+Expected from VCF: AAAAG, AAAGG, AAGGG
+  - k=5 (sliding):
+      (no motifs after filtering)
+  - k=6 (sliding):
+      (no motifs after filtering)
+
+=== chr4:39348424 [RFC1] allele 2 ===
+Expected from VCF: AAAAG, AAAGG, AAGGG
+  - k=5 (sliding):
+      AGGTA <- AGGTA : 6, AAGGT : 5
+  - k=6 (sliding):
+      AGGTAA <- AGGTAA : 6, AAGGTA : 5
+
