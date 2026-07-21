@@ -1,7 +1,12 @@
-# TRIEKY 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/a71e633c-7553-4e50-91cd-a2e305b9497a" alt="TRIEKY Logo" width="300">
 
-**TRIEKY** (**T**andem **R**epeat **I**nspector for **E**mergent **K**-mer **v**ariet**Y**)  
-*...because tandem repeats are tricky.*
+# TRIEKY
+
+  <b>T</b>andem <b>R</b>epeat <b>I</b>nspector for <b>E</b>mergent <b>K</b>-mer <b>v</b>ariet<b>Y</b><br>
+  <i>...because tandem repeats are tricky.</i>
+
+</div>
 
 TRIEKY is a lightweight, dependency-free post-processing tool for PacBio TRGT VCF files. It inspects reconstructed allele sequences to identify unexpected repeat motifs, detect interruptions, and summarize complex allele composition.
 
