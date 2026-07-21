@@ -152,7 +152,8 @@ If you use TRIEKY, please also cite TRGT as follows :
 
 If you use TRIEKY in your research or clinical workflows, please cite it as follows:
 
-> Dmitrievsky Z. *TRIEKY: Tandem Repeat Inspector for Emergent K-mer varietY.* GitHub (2026). [https://github.com/zoedmky/TRIEKY](https://github.com/zoedmky/TRIEKY)
+> Dmitrievsky Z. *TRIEKY: Tandem Repeat Inspector for Emergent K-mer varietY.* GitHub (2026).
+> [https://github.com/zoedmky/TRIEKY](https://github.com/zoedmky/TRIEKY)
 
 
 
