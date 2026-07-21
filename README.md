@@ -90,7 +90,7 @@ TRIEKY is configured using a simple TSV file (targets.tsv).
 Each row defines the behaviour for one locus.
 
 * **TRID** : Repeat identifier matching the TRGT VCF INFO field (e.g., DMPK).
-* **motif_sizes** : Comma-separated list of motif lenghts sizes to analyze, or leave empty to infer from VCF (e.g., 3 or 5,6).
+* **motif_sizes** : Comma-separated list of motif lenghts to analyze, or leave empty to infer from VCF (e.g., 3 or 5,6).
 * **startswith** : Restrict reported motifs to a specific first nucleotide (ANY, A, T, C, or G).
 * **count_min** : Minimum number of occurrences required to report a motif (e.g., 5).
 * **keep_only_unexpected** : true to hide motifs already expected by TRGT; false to report everything.
@@ -143,5 +143,16 @@ This tool and its clinical application were presented as an oral communication a
 If you use TRIEKY in your research or clinical workflows, please cite it as follows:
 
 > Dmitrievsky Z. *TRIEKY: Tandem Repeat Inspector for Emergent K-mer varietY.* GitHub (2026). [https://github.com/zoedmky/TRIEKY](https://github.com/zoedmky/TRIEKY)
+
+## Dependencies & Related Tools
+
+TRIEKY is designed as a companion tool for **TRGT (Tandem Repeat Genotyper)** by PacBio.
+
+If you use TRIEKY, please also cite TRGT:
+
+> Dolzhenko E, English A, Dashnow H et al. Characterization and visualization of tandem repeats at genome scale.
+> *Nature Biotechnology* 2024.
+> https://www.nature.com/articles/s41587-023-02057-3
+
 
 
