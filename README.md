@@ -8,7 +8,7 @@
 
 </div>
 
-TRIEKY is a lightweight, dependency-free post-processing tool for PacBio TRGT VCF files. It inspects reconstructed allele sequences to identify unexpected repeat motifs, detect interruptions, and summarize complex allele composition.
+TRIEKY is a lightweight, dependency-free post-processing tool for PacBio TRGT VCF files. It inspects reconstructed allele sequences to identify unexpected repeat motifs, detect interruption patterns, and summarize complex allele composition.
 
 > ⚠️ **Disclaimer & Limitations**
 > * **Research Use Only (RUO):** This tool is a prototype designed for research and exploratory purposes. It is not validated for primary clinical diagnosis.
@@ -18,17 +18,17 @@ TRIEKY is a lightweight, dependency-free post-processing tool for PacBio TRGT VC
 ---
 
 ## Why TRIEKY?
-
-TRGT (PacBio) is a powerful tandem repeat genotyper, but its output is naturally constrained by the expected motifs defined in the reference input BED file. When a sequenced allele contains unexpected sequence composition, such as **Interruption motifs** in *DMPK* or *HTT* or **Non-canonical motifs** in *RFC1* (CANVAS), these motifs are generally not explicitly broken down in the default VCF output. 
+TRGT is a powerful tandem repeat genotyping tool developed by PacBio, but its output is naturally constrained by the expected motifs defined in the reference input BED file. When an allele contains repeat motifs that are absent from the reference BED file, such as **interruption motifs** in *DMPK* or *HTT* or **non-canonical motifs** in *RFC1* (CANVAS), these motifs are generally not explicitly broken down in the default VCF output. 
 
 In clinical genetics, characterising this "hidden" sequence composition is crucial, as motif interruptions and alternative conformations can directly influence pathogenicity, modulate clinical phenotype, or explain apparent diagnostic discrepancies.
 
-TRIEKY was developed as a proof-of-concept companion tool to bridge this gap, allowing users to surface and filter non-expected k-mers directly from TRGT VCF records.
+TRIEKY was developed as a proof-of-concept companion tool to provide additional insight into repeat composition, allowing users to surface and filter non-expected k-mers directly from TRGT VCF records.
 
 ---
 
 ## Features
 
+* Automatic extraction of expected motifs directly from the TRGT VCF.
 *   **Multi-locus Support:** Process multiple TRGT loci simultaneously.
 *   **Flexible Configuration:** Tailor analysis per locus (thresholds, motif sizes, filters) via a simple TSV file.
 *   **Per-allele Resolution:** Analyzes and reports composition for each allele independently.
@@ -43,7 +43,7 @@ TRIEKY was developed as a proof-of-concept companion tool to bridge this gap, al
 TRIEKY extracts the fully reconstructed alternative sequences (`ALT`) from the TRGT VCF. Depending on your locus configuration, it applies one of two counting strategies:
 
 ### 1. Frame Mode
-Designed for simple repeat loci with a single expected motif length (e.g., *DMPK*, *HTT*, *FXN*). The sequence is parsed in non-overlapping steps across all possible reading frames (0 to k-1) to precisely capture structural variants while preserving repeat boundaries.
+Designed for simple repeat loci with a single expected motif length (e.g., *DMPK*, *HTT*, *FXN*). The sequence is parsed in non-overlapping steps across all possible reading frames (0 to k-1) to preserve the repeat structure while detecting unexpected motifs.
 
 ### 2. Sliding Mode
 Designed for complex, mosaic, or highly polymorphic loci containing multiple possible motif lengths (e.g., *RFC1*). A sliding window scans every possible k-mer along the reconstructed allele sequence.
@@ -113,7 +113,7 @@ TRIEKY/
 ├── .gitignore          # Python untracked files configuration
 ├── trieky.py           # Main Python execution script
 ├── targets.tsv         # Example configuration file
-└── example/            # Toy dataset for testing (coming soon)
+└── example/            # Example dataset
     ├── example.vcf
     └── expected_output.txt
 ```
