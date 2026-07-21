@@ -130,7 +130,7 @@ TRIEKY/
 ## Acknowledgements & History
 
 * **Development:** Developed at the **Biochemistry and Molecular Biology Department, Neurogenetics Laboratory, Hospices Civils de Lyon (France)**.
-* **Origin:** TRIEKY was developed in response to limitations identified during clinical use of TRGT, following exchanges with the PacBio development team.
+* **Origin:** TRIEKY was developed in response to limitations identified during technical evaluation use of TRGT, following exchanges with the PacBio development team.
 * **Disclaimer:** TRIEKY is intended as an independent companion post-processing tool and is not officially affiliated with PacBio.
 
 ### Communications
