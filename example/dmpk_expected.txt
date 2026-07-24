@@ -1,10 +1,11 @@
 === chr19:45770203 [DMPK] allele 1 ===
 Expected from VCF: CAG
   - k=3 (frame,phases=0..2):
-      (no motifs after filtering)
+      CAG <- CAG : 50, AGC : 49, GCA : 49
 
 === chr19:45770203 [DMPK] allele 2 ===
 Expected from VCF: CAG
   - k=3 (frame,phases=0..2):
+      CAG <- CAG : 50, AGC : 49, GCA : 49
       CCG <- CCG : 15, CGC : 15, GCC : 15
 
