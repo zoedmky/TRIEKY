@@ -391,16 +391,17 @@ def analyze(rec: Dict, cfg_row: Dict) -> Dict:
 
     for k in sizes:
         # MODE 1: simple repeat with a single motif size and defined expected motifs.
-        # We do frame-based counting over all phases, and accumulate only unexpected motifs.
         if len(sizes) == 1 and exp_sets:
             mode = "frame,phases=0..{}".format(k - 1)
             counts: Counter = Counter()
             for ph in range(k):
                 cph = count_frame(seq, k, ph)
                 for m, n in cph.items():
-                    # Only accumulate motifs that are not rotational variants of expected motifs
-                    if not is_expected(m, exp_sets):
+                    # Respecter le paramètre keep_only_unexpected
+                    if cfg_row["keep_only_unexpected"] and is_expected(m, exp_sets):
+                       continue  # Ignorer les motifs attendus si keep_only_unexpected=True
                         counts[m] += n
+                       
         else:
             # MODE 2: more complex / mosaic repeat or no expected motifs.
             # Use sliding window.
