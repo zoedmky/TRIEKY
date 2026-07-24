@@ -1,14 +1,10 @@
-=== chr4:39348424 [RFC1] allele 1 ===
+=== chr4:39348423 [RFC1] allele 1 ===
 Expected from VCF: AAAAG, AAAGG, AAGGG
-  - k=5 (sliding):
-      (no motifs after filtering)
-  - k=6 (sliding):
+  - k=5 (frame,phases=0..4):
       (no motifs after filtering)
 
-=== chr4:39348424 [RFC1] allele 2 ===
+=== chr4:39348423 [RFC1] allele 2 ===
 Expected from VCF: AAAAG, AAAGG, AAGGG
-  - k=5 (sliding):
-      AGGTA <- AGGTA : 6, AAGGT : 5
-  - k=6 (sliding):
-      AGGTAA <- AGGTAA : 6, AAGGTA : 5
+  - k=5 (frame,phases=0..4):
+      AGGGC: 75
 

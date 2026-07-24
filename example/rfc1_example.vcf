@@ -1,4 +1,18 @@
-##fileformat=VCFv4.2
-##source=TRGT
-#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
-chr4	39348424	.	N	AAAAGAAAAGAAAAGAAAAGAAAAGAAAAG,AAAAGAAAAGAAAAGAGGTAAGGTAAGGTAAGGTAAGGTAAGGTAAAAAGAAAAGAAAAG	.	PASS	TRID=RFC1;MOTIFS=AAAAG,AAAGG,AAGGG
+##fileformat=VCFv4.2									
+##source=TRGT-v3.0.0 (synthetic example for TRIEKY documentation)									
+##FILTER=<ID=PASS,Description="All filters passed">									
+##INFO=<ID=TRID,Number=1,Type=String,Description="Tandem repeat ID from input catalog">									
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the repeat region">									
+##INFO=<ID=MOTIFS,Number=.,Type=String,Description="Motif units observed at the locus">									
+##INFO=<ID=STRUC,Number=1,Type=String,Description="Expected locus structure">									
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">									
+##FORMAT=<ID=AL,Number=.,Type=Integer,Description="Allele lengths in base pairs">									
+##FORMAT=<ID=ALLR,Number=.,Type=String,Description="Length confidence interval per allele">									
+##FORMAT=<ID=SD,Number=.,Type=Integer,Description="Number of supporting reads per allele">									
+##FORMAT=<ID=MC,Number=.,Type=String,Description="Motif copy counts per allele">									
+##FORMAT=<ID=MS,Number=.,Type=String,Description="Run-length segmentation string per allele">									
+##FORMAT=<ID=AP,Number=.,Type=Float,Description="Allele purity">									
+##FORMAT=<ID=AM,Number=.,Type=Float,Description="Mean methylation level per allele">									
+##									
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SAMPLE
+chr4	39348423	.	A	AAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAGAAAAG,AAAAAGAAAAGAAAAGAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGCAGGGC	.	PASS	TRID=RFC1;END=39348813;MOTIFS=AAAAG,AAAGG,AAGGG;STRUC=(AAAAG)n	GT:AL:ALLR:SD:MC:MS:AP:AM	1/2:200,390:197-203,385-395:45,38:40_0_0,3_0_0:0(0-200),0(0-15):1.00,0.08:.,.

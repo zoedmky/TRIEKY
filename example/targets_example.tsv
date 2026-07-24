@@ -1,4 +1,4 @@
 TRID	motif_sizes	startswith	count_min	keep_only_unexpected	group_rotations
-DMPK	3	any	3	true	true
-RFC1	5,6	A	3	true	true
+DMPK	3	any	10	true	true
+RFC1	5	A	10	true	true
 

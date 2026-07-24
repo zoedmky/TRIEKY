@@ -1,4 +1,18 @@
-##fileformat=VCFv4.2
-##source=TRGT
-#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
-chr19	45770204	.	N	CAGCAGCAGCAGCAGCAGCAGCAGCAGCAG,CAGCAGCGGCAGCGGCAGCGGCAGCGGCAGCGGCACCACCACCAGCAGCAGCAGCAG	.	PASS	TRID=DMPK;MOTIFS=CAG
+##fileformat=VCFv4.2									
+##source=TRGT-v3.0.0 (synthetic example for TRIEKY documentation)									
+##FILTER=<ID=PASS,Description="All filters passed">									
+##INFO=<ID=TRID,Number=1,Type=String,Description="Tandem repeat ID from input catalog">									
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the repeat region">									
+##INFO=<ID=MOTIFS,Number=.,Type=String,Description="Motif units observed at the locus">									
+##INFO=<ID=STRUC,Number=1,Type=String,Description="Expected locus structure">									
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">									
+##FORMAT=<ID=AL,Number=.,Type=Integer,Description="Allele lengths in base pairs">									
+##FORMAT=<ID=ALLR,Number=.,Type=String,Description="Length confidence interval per allele">									
+##FORMAT=<ID=SD,Number=.,Type=Integer,Description="Number of supporting reads per allele">									
+##FORMAT=<ID=MC,Number=.,Type=String,Description="Motif copy counts per allele">									
+##FORMAT=<ID=MS,Number=.,Type=String,Description="Run-length segmentation string per allele">									
+##FORMAT=<ID=AP,Number=.,Type=Float,Description="Allele purity">									
+##FORMAT=<ID=AM,Number=.,Type=Float,Description="Mean methylation level per allele">									
+##									
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SAMPLE
+chr19	45770203	.	C	CCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAG,CCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAGCCGCAGCCGCAGCCGCAGCCGCAGCCGCAGCCGCAGCCGCAGCCGCAGCCGCAGCCGCAGCCGCAGCCGCAGCCGCAGCCGCAGCCGCAGCAGCAGCAGCAGCAGCAGCAGCAGCAG	.	PASS	TRID=DMPK;END=45770354;MOTIFS=CAG;STRUC=(CAG)n	GT:AL:ALLR:SD:MC:MS:AP:AM	1/2:150,195:147-153,191-199:32,28:50,50:0(0-150),0(0-195):1.00,0.77:.,.
