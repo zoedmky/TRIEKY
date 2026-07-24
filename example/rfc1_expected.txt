@@ -1,10 +1,10 @@
 === chr4:39348423 [RFC1] allele 1 ===
 Expected from VCF: AAAAG, AAAGG, AAGGG
   - k=5 (frame,phases=0..4):
-      (no motifs after filtering)
+      AAGGG <- AAGGG : 40, AGGGA : 39
 
 === chr4:39348423 [RFC1] allele 2 ===
 Expected from VCF: AAAAG, AAAGG, AAGGG
   - k=5 (frame,phases=0..4):
       AGGGC: 75
-
+      AAAAG <- AAAAG : 3, AAAGA : 3
