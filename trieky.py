@@ -400,7 +400,7 @@ def analyze(rec: Dict, cfg_row: Dict) -> Dict:
                     # Respecter le paramètre keep_only_unexpected
                     if cfg_row["keep_only_unexpected"] and is_expected(m, exp_sets):
                        continue  # Ignorer les motifs attendus si keep_only_unexpected=True
-                       counts[m] += n
+                    counts[m] += n
                        
         else:
             # MODE 2: more complex / mosaic repeat or no expected motifs.
