@@ -3,7 +3,7 @@
 
 # TRIEKY
 
-  <b>T</b>andem <b>R</b>epeat <b>I</b>nspector for <b>E</b>mergent <b>K</b>-mer <b>v</b>ariet<b>Y</b><br>
+  <b>T</b>andem <b>R</b>epeat <b>I</b>nspector for <b>E</b>mergent <b>K</b>-mer variet<b>Y</b><br>
   <i>...because tandem repeats are tricky.</i>
 
 </div>
